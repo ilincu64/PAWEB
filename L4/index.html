@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dialog Box</title>
+<style>
+  dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+
+  h3 {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  p {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+  }
+
+  menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00aeff;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<dialog open>
+  <h3>Confirm</h3>
+  <p>Are you sure you want to delete Kevin?</p>
+  <menu>
+    <button>Ok</button>
+    <button>Cancel</button>
+  </menu>
+</dialog>
+
+</body>
+</html>
